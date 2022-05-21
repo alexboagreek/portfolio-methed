@@ -1,12 +1,12 @@
 .header {
     background-color: #A1B7C8;
     min-height: 60px;
+    padding: 13px 0;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
-    padding: 13px 15px;
     align-items: center;
 }
 .header__logo {
@@ -15,8 +15,9 @@
 
 .header__contacts {
     position: absolute;
+    display: none;
     background-color: #A1B7C8;
-    top: 71px;
+    top: 66px;
     left: 0;
     right: 0;
     padding: 30px 15px;
@@ -75,10 +76,69 @@
     background-image: url(../assets/img/telegram.svg);
 }
 
-.contacts__item:not(:last-child) {
+.contacts__item {
     margin-bottom: 50px;
+}
+.contacts__item:last-child {
+    margin-bottom: 0;
 }
 .contacts__head_social {
     margin-bottom: 12px;
 }
 
+@media (min-width: 768px) {
+    .header {
+        min-height: 100px;
+        padding: 28px 0;
+    }
+    .header__logo {
+        width: 180px;
+    }
+    .header__contacts {
+        top: 113px;
+        padding: 40px;
+    }
+    .contacts__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts__item {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding: 50px 0;
+    }
+    .header__container {
+        height: 100%;
+        flex-direction: column;
+    }
+    .header__contacts {
+        position: static;
+    }
+    .contacts__list {
+        flex-direction: column;
+    }
+    .contacts__item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .header__logo {
+        width: 273px;
+    }
+    .header__contacts-burger {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        padding-top: 60px;
+    }
+
+}
