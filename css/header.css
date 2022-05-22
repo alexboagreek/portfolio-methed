@@ -22,6 +22,7 @@
     right: 0;
     padding: 30px 15px;
     color: #fff;
+    margin-top: 270px;
 }
 .header__contacts-burger {
     display: block;
@@ -92,6 +93,9 @@
         min-height: 100px;
         padding: 28px 0;
     }
+    .header__container {
+        justify-content: space-between;
+    }
     .header__logo {
         width: 180px;
     }
@@ -113,9 +117,7 @@
         padding: 50px 0;
     }
     .header__container {
-        height: 100%;
         flex-direction: column;
-        align-items: flex-end;
         padding: 0 20px;
     }
     .header__contacts {
@@ -144,11 +146,8 @@
     .header {
         padding-top: 60px;
     }
-    .header__container {
-        z-index: 10;
+    .header__contacts {
+        margin-top: 512px;
     }
-    .container {
-        max-width: 100%;
-    }
-
+    
 }

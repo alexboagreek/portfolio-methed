@@ -66,7 +66,7 @@
     }
     .header__container {
         align-items: center;
-        justify-content: start;
+        justify-content: space-between;
     }
     .container {
         padding: 0 10px;
@@ -108,7 +108,7 @@
     }
     .present__container {
         justify-content: center;
-        margin-left: 219px;
+        margin-left: 201px;
     }
     .present:before {
         content: '';
@@ -140,5 +140,8 @@
     .present__description {
         max-width: 350px;
         font-size: 18px;
+    }
+    .present__container {
+        margin-left: 385px;
     }
 }
