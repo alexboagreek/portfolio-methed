@@ -54,6 +54,9 @@ h1, h2, h3, p {
     padding: 0 15px;
     margin: 0 auto;
 }
+.contacts__link {
+    cursor: pointer;
+}
 
 section {
     padding: 30px 0;
@@ -63,9 +66,18 @@ section {
     .container {
         padding: 0 40px;
     }
+    section {
+        padding: 50px 0;
+    }
 }
 
 @media (min-width: 992px) {
+    .container {
+        padding: 0 30px 0 270px;
+    }
+    section {
+        padding: 65px 0;
+    }
     .page__header {
         width: 240px;
         position: fixed;
@@ -76,6 +88,10 @@ section {
 }
 
 @media (min-width: 1440px) {
+
+    section {
+        padding: 75px 0;
+    }
 
     .page {
         background-image: linear-gradient(to right, #A1B7C8 24.5%, transparent 24.5%);

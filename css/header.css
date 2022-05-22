@@ -78,6 +78,7 @@
 
 .contacts__item {
     margin-bottom: 50px;
+    cursor: pointer;
 }
 .contacts__item:last-child {
     margin-bottom: 0;
@@ -115,6 +116,7 @@
         height: 100%;
         flex-direction: column;
         align-items: flex-end;
+        padding: 0 20px;
     }
     .header__contacts {
         position: static;
@@ -141,6 +143,9 @@
 @media (min-width: 1440px) {
     .header {
         padding-top: 60px;
+    }
+    .container {
+        max-width: 100%;
     }
 
 }
