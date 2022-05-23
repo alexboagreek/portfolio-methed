@@ -32,6 +32,8 @@
 
 .present__order-btn {
     padding: 16px 60px;
+    width: 190px;
+    height: 52px;
     border-radius: 4px;
     background-color: #E87C40;
     font-size: 14px;
@@ -45,7 +47,7 @@
         display: flex;
     }
     .present__photo {
-        width: 33%;
+        width: 35%;
         margin-right: 12px;
         margin-bottom: 0;
     }
@@ -72,14 +74,14 @@
         padding: 0 10px;
     }
     .present__order-btn {
+        width: 254px;
+        height: 73px;
+        padding: 24px 82px;
         font-size: 18px;
     }
 }
 
 @media (min-width: 768px) {
-    .present {
-        padding-top: 70px;
-    }
     .present__photo {
         width: 370px;
         margin-right: 30px;
@@ -90,26 +92,20 @@
     .present__title{
         margin-bottom: 24px;
     } 
+  
     .present__description {
-        font-size: 18px;
-    }
-    .present__description {
-       max-width: 291px;
+       font-size: 18px;
+       max-width: 291px; 
        margin-bottom: 60px;
-    }
-    .present__order-btn {
-        padding: 24px 82px;
     }
 }
 
 @media (min-width: 992px) {
     .present {
         position: relative;
+        padding-left: 278px;
     }
-    .present__container {
-        justify-content: center;
-        margin-left: 201px;
-    }
+   
     .present:before {
         content: '';
         position: absolute;
@@ -141,7 +137,5 @@
         max-width: 350px;
         font-size: 18px;
     }
-    .present__container {
-        margin-left: 385px;
-    }
+   
 }
