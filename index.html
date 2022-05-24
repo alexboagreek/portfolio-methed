@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16X16" href="assets/img/portfolio-color.png">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Александр Сурков - FrontEnd-разработчик | Portfolio</title>
 </head>
 <body class="page">
@@ -71,9 +74,9 @@
         <section class="portfolio">
             <div class="container portfolio__container">
                 <h2 class="portfolio__title">Портфолио</h2>
-                <div class="portfolio__slider">
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item">
+                <div class="portfolio__slider swiper">
+                    <ul class="portfolio__list swiper-wrapper">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
                                 <img src="assets/img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
@@ -83,9 +86,9 @@
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
                         </li>
-                        <!-- <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
-                                <img src="" alt="" class="card__picture">
+                                <img src="assets/img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
@@ -93,9 +96,9 @@
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
-                                <img src="" alt="" class="card__picture">
+                                <img src="assets/img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
@@ -103,9 +106,9 @@
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
-                                <img src="" alt="" class="card__picture">
+                                <img src="assets/img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
@@ -113,16 +116,26 @@
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
                         </li>
-                        <li class="portfolio__item">
+                        <li class="portfolio__item swiper-slide">
                             <article class="card">
-                                <img src="" alt="" class="card__picture">
+                                <img src="assets/img/cinema.jpg" alt="" class="card__picture">
                                 <p class="card__data">
                                     <span class="card__client">Клиент: Cinema</span>
                                     <time class="card__date" datetime="2020">год: 2020</time>
                                 </p>
                                 <h3 class="card__title">Многостраничный сайт</h3>
                             </article>
-                        </li> -->
+                        </li>
+                        <li class="portfolio__item swiper-slide">
+                            <article class="card">
+                                <img src="assets/img/cinema.jpg" alt="" class="card__picture">
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">год: 2020</time>
+                                </p>
+                                <h3 class="card__title">Многостраничный сайт</h3>
+                            </article>
+                        </li>
                     </ul>
                     <button class="portfolio__arrow portfolio__arrow_left"></button>
                     <button class="portfolio__arrow portfolio__arrow_right"></button>
@@ -130,5 +143,52 @@
             </div>
         </section>
     </main>
+    <div class="page__overlay page__overlay_modal">
+        <div class="modal">
+            <h2 class="modal__title">Заполните форму и я свяжусь с Вами</h2>
+
+            <form class="modal callback">
+                <fieldset class="callback__group">
+                    <legend class="visually-hidden">Личные данные</legend>
+                    <label class="callback__label">
+                        <span class="callback__label-text">ФИО</span>
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите Ваше ФИО">
+                    </label>
+    
+                    <label class="callback__label">
+                        <span class="callback__label-text">Телефон</span>
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите Ваш номер телефона">
+                    </label>
+                </fieldset>
+              
+                <fieldset class="callback__group connect">
+                    <legend class="connect__title">Где удобнее связаться</legend>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="telegram">
+                        <span class="connect__text">Телеграм</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="whatsapp">
+                        <span class="connect__text">Whatsapp</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="call">
+                        <span class="connect__text">Позвонить</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="viber">
+                        <span class="connect__text">Viber</span>
+                    </label>
+                </fieldset>
+                <button type="submit" class="callback__btn">Заказать</button>
+            </form>
+            <button class="modal__close">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="39.7747" height="2.65165" rx="1" transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 28.125)" fill="#282626"/>
+                    <rect width="39.7747" height="2.65165" rx="1" transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.875 0)" fill="#282626"/>
+                </svg>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
