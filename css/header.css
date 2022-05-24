@@ -140,12 +140,22 @@
     .header__contacts-burger {
         display: none;
     }
-    
+
 }
 
 @media (min-width: 1440px) {
     .header {
         width: 355px;
         padding-top: 60px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header__contacts {
+        left: 82px;
+        top: 665px;
+        position: absolute;
+        display: block;
+        padding: 0;
     }
 }

@@ -100,3 +100,9 @@
     }
 
 }
+
+@media (min-width: 1920px) {
+    .advantage__container {
+        margin-left: 614px;
+    }
+}

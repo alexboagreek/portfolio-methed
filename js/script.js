@@ -30,4 +30,10 @@ $('.present__order-btn').click(() => {
 });
 $('.modal__close').click(() => {
     $('.page__overlay_modal').fadeOut(400);
+});
+
+$('.page__overlay').click((event) => {
+    if (event.target.classList.contains('page__overlay')) {
+        $('.page__overlay_modal').fadeOut(400);
+    }
 })
